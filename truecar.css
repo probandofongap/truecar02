@@ -1,0 +1,116 @@
+/*
+ Document   : truecar.css
+ Created on : 2014-03-27 04:04 PM
+ Author     : Jleonp
+ Description:
+ Purpose of the stylesheet follows.
+ To change this template use Tools | Templates.
+ */
+body {
+	font-family: verdana;
+}
+h1 {
+	background-color: #13395D;
+	color: white;
+}
+#pag1 {
+	background: url(http://a.tcimg.net/tcdc/113.0-5372/images/mobile/bg-mobile-new-homepage.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+}
+#pag2 {
+	background-color:#0088BB;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+}
+#cabecera {
+	width: 100%;
+	background-color: #13395D;
+	border: 0px;
+}
+#btn-izq, #btn-dch {
+	background-color: #13395D;
+	color: white;
+	border: 0px;
+}
+h2 {
+	text-align: left;
+	margin-left: 60px;
+	font-size: 1.2em;
+	color: white;
+}
+h3 {
+	text-align: center;
+	font-size: 0.6em;
+	color: white;
+}
+#make {
+	border-radius: 5px 5px 0px 0px;
+}
+
+#make, #model, #zip {
+	width: 50%;
+	margin-left: 75px;
+	color: gray;
+	border: 0px;
+}
+
+#foto-coche{
+    width:40%;
+}
+
+ui-alt-icon {
+	background-color: orange;
+}
+
+#zip {
+	border-radius: 0px 0px 5px 5px;
+}
+#btn-next {
+	width: 56%;
+	margin-left: 75px;
+	background-color: #FF6900;
+	color: white;
+	border-radius: 5px 5px 5px 5px;
+	border: 0px;
+}
+
+#more {
+	width: 56%;
+	margin-left: 50px;
+	margin-bottom:10px;
+	margin-top:10px;
+	background-color: #FFF555;
+	color: orange;
+	border-radius: 5px 5px 5px 5px;
+	border:0px;
+}
+
+#btn-how {
+	position: absolute;
+	top: 460px;
+	left: 20px;
+	width: 26%;
+	background-color: rgba(85, 143, 181, 0.5);
+	color: white;
+	border-radius: 5px 5px 5px 5px;
+	border: 0px;
+}
+#p2-btn-dch {
+	background-color: #0F5986;
+	color: white;
+	border: 0px;
+}
+
+#precio-homer,#precio-batmovil,#precio-kitt,#precio-troncomovil,#precio-delorean,#how-it-works{
+	font-size: 2.0em;
+	font-family:"Comic Sans MS";
+}
+
+#mipanel{
+	background-color: black;
+	font-family:"Arial Narrow";
+	font-size: 1.2em;
+}

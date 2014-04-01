@@ -1,0 +1,193 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" />
+		<link rel="stylesheet" href="truecar.css" />
+		<script src="jquery-1.11.0.js"></script>
+		<script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<script src="funciones.js"></script>
+		<script src="fastclick.js"></script>
+
+		<title>TrueCar</title>
+	</head>
+
+	<body>
+		<div data-role="page" id="pag1">
+			<div data-role="header" data-position="fixed" id="cabecera">
+				<a class="ui-btn ui-btn-icon-left ui-icon-bars ui-btn-icon-notext ui-nodisc-icon" href="#" id="btn-izq">Algo</a>
+				<h1>TRUECar</h1>
+				<a class="ui-btn ui-btn-icon-right" href="#" id="btn-dch">Sign in</a>
+			</div>
+			<h2>Never Overpay.</h2>
+			<h3>TrueCar users save an average of $3,046 off MSRP</h3>
+
+			<ul data-role="listview">
+				<li>
+					<a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-d ui-nodisc-icon ui-alt-icon" id="make">Select a Make: </a>
+				</li>
+				<li>
+					<a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-d ui-nodisc-icon ui-alt-icon" id="model">Select a Model: </a>
+				</li>
+				<li>
+					<a href="#" class="ui-btn ui-btn-icon-right ui-icon-arrow-u-r ui-nodisc-icon ui-alt-icon" id="zip">
+					<input type="text" name="zip" placeholder="Enter ZIP Code">
+					</a>
+				</li>
+			</ul>
+
+			<a href="#pag2" class="ui-btn" data-transition="none" id="btn-next">Ver ofertas >></a>
+
+			<a href="#how-it-works" class="ui-btn" data-rel="popup" data-position-to="origin" id="btn-how">How it works</a>
+		</div>
+		<div data-role="page" id="pag2">
+			<div data-role="header" data-position="fixed" id="cabecera">
+				<a class="ui-btn ui-btn-icon-left ui-icon-bars ui-btn-icon-notext ui-nodisc-icon" href="#mipanel" id="btn-izq">Algo</a>
+				<h1>Oferta del día</h1>
+				<a class="ui-btn ui-btn-icon-right ui-icon-back ui-nodisc-icon" data-rel="back" href="#pag1" id="p2-btn-dch">Atrás</a>
+			</div>
+			
+			<div data-role="panel" id="mipanel">
+				<h2>Espacio</h2>
+				<p>PUBLICITARIO</p>
+			</div>
+			
+			<div data-role="popup" id="how-it-works">
+				<p>
+					Te ofrecemos vehículos a buen precio
+				</p>
+			</div>
+			<div data-role="main" class="ui-content">
+				<a href="#precio-homer" data-rel="popup" data-position-to="origin" class="ui-btn ui-btn-icon-right ui-icon-carat-d ui-nodisc-icon" id="more">Dame un precio</a>
+				<div data-role="popup" id="precio-homer">
+					<p>
+						$200,000
+					</p>
+				</div>
+				<img id="foto-coche" src="img/homer.jpg">
+				<div data-role="collapsible">
+					<h2>El Homer</h2>
+					<div>
+						<p>
+							Escalera para subir
+						</p>
+						<p>
+							Cámara anti-gritos para los niños
+						</p>
+						<p>
+							Con bocina que toca "La cucaracha"
+						</p>
+					</div>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<a href="#precio-batmovil" data-rel="popup" data-position-to="origin" class="ui-btn ui-btn-icon-right ui-icon-carat-d ui-nodisc-icon" id="more">Dame un precio</a>
+				<div data-role="popup" id="precio-batmovil">
+					<p>
+						$500,000
+					</p>
+				</div>
+
+				<img id="foto-coche" src="img/batmovil.jpg">
+				<div data-role="collapsible">
+					<h2>Batmóvil</h2>
+					<div>
+						<p>
+							Velocidad máxima:485 Km/h
+						</p>
+						<p>
+							8 marchas y asiento eyectable
+						</p>
+						<p>
+							Robin no incluido
+						</p>
+					</div>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<a href="#precio-kitt" data-rel="popup" data-position-to="origin" class="ui-btn ui-btn-icon-right ui-icon-carat-d ui-nodisc-icon" id="more">Dame un precio</a>
+				<div data-role="popup" id="precio-kitt">
+					<p>
+						$320,000
+					</p>
+				</div>
+
+				<img id="foto-coche" src="img/kitt.jpg">
+				<div data-role="collapsible">
+					<h2>Kitt</h2>
+					<div>
+						<p>
+							Fantástico
+						</p>
+						<p>
+							Autonomía propia
+						</p>
+						<p>
+							Reloj llamador incluido
+						</p>
+					</div>
+				</div>
+
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<a href="#precio-troncomovil" data-rel="popup" data-position-to="origin" class="ui-btn ui-btn-icon-right ui-icon-carat-d ui-nodisc-icon" id="more">Dame un precio</a>
+				<div data-role="popup" id="precio-troncomovil">
+					<p>
+						$29,000
+					</p>
+				</div>
+
+				<img id="foto-coche" src="img/troncomovil.jpg">
+				<div data-role="collapsible">
+					<h2>Troncomóvil</h2>
+					<div>
+						<p>
+							Consumo reducido
+						</p>
+						<p>
+							Sólo 3 millones de años de antigüedad
+						</p>
+						<p>
+							Seguro anti-costillas-de-brontosaurio
+						</p>
+					</div>
+				</div>
+
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<a href="#precio-delorean" data-rel="popup" data-position-to="origin" class="ui-btn ui-btn-icon-right ui-icon-carat-d ui-nodisc-icon" id="more">Dame un precio</a>
+				<div data-role="popup" id="precio-delorean">
+					<p>
+						$275,000
+					</p>
+				</div>
+
+				<img id="foto-coche" src="img/delorean.jpg">
+				<div data-role="collapsible">
+					<h2>Delorean del Dr. Brown</h2>
+					<div>
+						<p>
+							Disponibles versiones I, II y III
+						</p>
+						<p>
+							Próxima revisión: 31 de diciembre de 9.999 
+						</p>
+						<p>
+							No incluye seguro anti-paradojas
+						</p>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+	</body>
+
+</html>
